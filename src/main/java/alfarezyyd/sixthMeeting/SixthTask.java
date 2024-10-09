@@ -30,4 +30,21 @@ public class SixthTask {
       }
     }
   }
+
+  public static void evenOrOddLooping() {
+    for (int i = 0; i <= 20; i++) {
+      if (i % 2 == 0) {
+        System.out.println(i + " adalah bilangan genap");
+      } else {
+        System.out.println(i + " adalah bilangan ganjil");
+      }
+    }
+  }
+  
+  public static void chickenSongLooping(int numberOfChicken){
+    for (int i = numberOfChicken; i > 0; i--) {
+      System.out.println("Anak ayam turunlah " + i);
+      System.out.println("Pergi satu, tinggallah " + (i - 1));
+    }
+  }
 }
