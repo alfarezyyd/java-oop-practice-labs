@@ -1,11 +1,12 @@
 package alfarezyyd;
 
-import static alfarezyyd.sixthMeeting.SixthTask.multiplicationTable;
+
+import alfarezyyd.sixthMeeting.SixthTask;
 
 public class Main {
 
 
   public static void main(String[] args) {
-    multiplicationTable(10);
+    SixthTask.primeNumberLooping();
   }
 }

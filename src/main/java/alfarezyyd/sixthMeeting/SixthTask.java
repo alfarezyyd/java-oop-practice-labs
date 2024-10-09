@@ -16,4 +16,18 @@ public class SixthTask {
       System.out.println();
     }
   }
+
+  public static void primeNumberLooping() {
+    for (int i = 0; i <= 20; i++) {
+      boolean isPrimeNumberFlag = true;
+      for (int j = 2; j <= 20; j++) {
+        if (i % j == 0 && i != j) {
+          isPrimeNumberFlag = false;
+        }
+      }
+      if (isPrimeNumberFlag) {
+        System.out.println(i);
+      }
+    }
+  }
 }
