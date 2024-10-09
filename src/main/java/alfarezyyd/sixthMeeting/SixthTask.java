@@ -47,4 +47,10 @@ public class SixthTask {
       System.out.println("Pergi satu, tinggallah " + (i - 1));
     }
   }
+
+  public static void characterLooping(){
+    for (int i = 65; i <= 90; i++) {
+      System.out.print((char) i + " ");
+    }
+  }
 }

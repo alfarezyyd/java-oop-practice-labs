@@ -7,6 +7,6 @@ public class Main {
 
 
   public static void main(String[] args) {
-    SixthTask.chickenSongLooping(5);
+    SixthTask.characterLooping();
   }
 }
