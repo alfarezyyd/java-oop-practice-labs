@@ -23,6 +23,7 @@ public class SixthTask {
       for (int j = 2; j <= 20; j++) {
         if (i % j == 0 && i != j) {
           isPrimeNumberFlag = false;
+          break;
         }
       }
       if (isPrimeNumberFlag) {
