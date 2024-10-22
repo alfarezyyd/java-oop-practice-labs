@@ -1,5 +1,6 @@
 package alfarezyyd.eigthMeeting;
 
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -99,4 +100,48 @@ public class Practice {
     newFrame.setVisible(true);
 
   }
+
+  public void renderSimpleFormSwing() {
+    // Membuat frame
+    JFrame frame = new JFrame("Simple Form");
+    frame.setSize(400, 300);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.setLayout(new FlowLayout());
+
+    // Membuat label dan field untuk nama
+    JLabel nameLabel = new JLabel("Name: ");
+    JTextField nameField = new JTextField(10);
+
+    // Membuat label dan field untuk umur
+    JLabel ageLabel = new JLabel("Age: ");
+    JTextField ageField = new JTextField(10);
+
+    // Membuat tombol
+    JButton submitButton = new JButton("Submit");
+
+    // Menambahkan ActionListener untuk tombol
+    submitButton.addActionListener(new ActionListener() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+        // Mengambil input dari text field
+        String name = nameField.getText();
+        String age = ageField.getText();
+
+        // Menampilkan dialog pop-up dengan informasi yang dimasukkan
+        String message = "Name: " + name + "\nAge: " + age;
+        JOptionPane.showMessageDialog(frame, message, "Information", JOptionPane.INFORMATION_MESSAGE);
+      }
+    });
+
+    // Menambahkan komponen ke frame
+    frame.add(nameLabel);
+    frame.add(nameField);
+    frame.add(ageLabel);
+    frame.add(ageField);
+    frame.add(submitButton);
+
+    // Menampilkan frame
+    frame.setVisible(true);
+  }
+
 }
