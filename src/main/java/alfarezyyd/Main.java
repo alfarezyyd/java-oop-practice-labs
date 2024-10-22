@@ -10,6 +10,6 @@ public class Main {
     Practice eigthMeetingPractice = new Practice();
 //    eigthMeetingPractice.demoCommandLineInterface();
 //    eigthMeetingPractice.renderButton();
-    eigthMeetingPractice.renderSimpleForm();
+    eigthMeetingPractice.renderSimpleFormSwing();
   }
 }

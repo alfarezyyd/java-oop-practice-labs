@@ -7,4 +7,5 @@ public class ExampleForm {
   private JCheckBox checkBox2;
   private JButton button1;
   private JTextPane textPane1;
+  private JTextArea textArea1;
 }
